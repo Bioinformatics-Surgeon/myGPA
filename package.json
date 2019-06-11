@@ -1,0 +1,23 @@
+{
+  "name": "myGPA",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bioinformatics-Surgeon/myGPA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bioinformatics-Surgeon/myGPA/issues"
+  },
+  "homepage": "https://github.com/Bioinformatics-Surgeon/myGPA#readme",
+  "dependencies": {
+    "chartjs-plugin-annotation": "^0.5.7"
+  }
+}
