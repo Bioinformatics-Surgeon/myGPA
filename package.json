@@ -2,7 +2,7 @@
   "name": "github-battle",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "babel": {
     "presets": [
       "@babel/preset-env",
@@ -11,12 +11,15 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "predeploy": "webpack --config webpack.config.js",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bioinformatics-Surgeon/github-battle.git"
   },
+  "homepage": "https://www.mudanic.com/myGPA/",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -27,6 +30,7 @@
   "dependencies": {
     "chart.js": "^2.8.0",
     "chartjs-plugin-annotation": "^0.5.7",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-router-dom": "^5.0.0"
