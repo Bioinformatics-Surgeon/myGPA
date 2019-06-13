@@ -8,3 +8,19 @@ canvas {
   max-width: 500px;
   max-height: 500px;
 }
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  canvas {
+    min-width: 200px;
+    min-height: 200px;
+  }
+  .col {
+    padding: 0;
+  }
+}

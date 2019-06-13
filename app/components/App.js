@@ -1,4 +1,6 @@
 const React = require('react');
+const chart = require('chart.js');
+const annotation = require('chartjs-plugin-annotation');
 
 class App extends React.Component {
   componentDidMount() {
@@ -83,6 +85,7 @@ class App extends React.Component {
           intersect: true
         },
         responsive: true,
+        maintainAspectRatio: false,
         annotation: {
           annotations: [
             {
@@ -138,10 +141,12 @@ class App extends React.Component {
         </div>
         <div className='row'>
           <div className='col d-flex justify-content-center'>
-            <canvas id='myChart' />
-            <p className='p-2 mt-4'>
-              This chart shows my end of semester GPA plotted against time
-            </p>
+            <div className='col bg-light'>
+              <canvas id='myChart' width='400' height='300' />
+              <h5 className='p-2'>
+                This chart shows my end of semester GPA plotted against time
+              </h5>
+            </div>
           </div>
         </div>
       </div>

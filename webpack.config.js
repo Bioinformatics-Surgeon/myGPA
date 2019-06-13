@@ -6,8 +6,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js',
-    publicPath: '/'
-  },
+    publicPath: './'
+  }, // change the public path to './' for deployment
   module: {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
