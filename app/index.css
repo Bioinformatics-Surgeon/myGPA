@@ -16,9 +16,9 @@ canvas {
 }
 
 @media screen and (max-width: 600px) {
-  canvas {
-    min-width: 200px;
-    min-height: 200px;
+  img {
+    max-width: 350px;
+    max-height: 350px;
   }
   .col {
     padding: 0;
