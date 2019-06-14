@@ -24,28 +24,57 @@ class App extends React.Component {
             I learn how I learn and how to study, and I learned how to
             prioritize work and school.{' '}
           </p>
-          <a
-            className='btn btn-primary btn-lg'
-            target='_blank'
-            href='https://www.linkedin.com/in/mudanic/'
-            role='button'
-          >
-            Learn more
-          </a>
+          <div className='row'>
+            <div className='col'>
+              <p>
+                Click the "Learn more" to visit my Linkedin and learn more about
+                my progress since graduating.
+              </p>
+            </div>
+            <div className='col'>
+              <p>
+                Click the "My portfolio" to see my portfolio and see some of the
+                projects I have worked on.
+              </p>
+            </div>
+          </div>
+
+          <div className='row'>
+            <div className='col'>
+              <a
+                className='btn btn-primary btn-lg'
+                target='_blank'
+                href='https://www.linkedin.com/in/mudanic/'
+                role='button'
+              >
+                Learn more
+              </a>
+            </div>
+            <div className='col'>
+              <a
+                className='btn btn-primary btn-lg'
+                target='_blank'
+                href='https://www.mudanic.com/'
+                role='button'
+              >
+                My portfolio
+              </a>
+            </div>
+          </div>
         </div>
         <div className='row'>
-          <div className='col d-flex justify-content-center'>
-            <div className='col'>
+          <div className='col d-flex justify-content-center flex-column'>
+            <div className='col p-0 center'>
               <img
                 src='https://res.cloudinary.com/moodyappcloudname/image/upload/v1560474841/chartGPA.png'
                 alt='chart'
                 width='500px'
                 height='500px'
               />
-              <h5 className='p-2'>
-                This chart shows my end of semester GPA plotted against time
-              </h5>
             </div>
+            <h5 className='p-2'>
+              This chart shows my end of semester GPA plotted against time
+            </h5>
           </div>
         </div>
       </div>
